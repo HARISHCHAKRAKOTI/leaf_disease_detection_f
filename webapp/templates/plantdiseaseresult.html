@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}Plant Disease Result{% endblock title %}
+
+{% block content %}
+<div class="row-sm p-sm-5">
+    <div class="col-sm-12 p-sm-5">
+        <h3 class="text-center">Plant Disease Detection</h3>
+        <p class="text-center">The detected disease is - {{ corrected_result }}</p>
+        <div class="text-center">
+            <img src="{{ url_for('static', filename=image_path) }}" alt="Uploaded Image" style="max-width:100%;height:auto;">
+        </div>
+    </div>  
+</div>
